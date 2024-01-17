@@ -41,6 +41,17 @@ transition: all linear .3s;
  }
 
 /*==========================common css part ============================================*/
+.drop{
+    display: none;
+    flex-direction: column;
+
+  
+
+}
+.drop_3{
+    flex-direction: column;
+
+}
 
 
 nav{
@@ -53,9 +64,10 @@ nav{
 }
 .nav_logo{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content:start;
     align-items: center;
+   
    
 }
 .logo_title{
@@ -71,14 +83,8 @@ ul{
     list-style-type: none;
 }
 .menu_barr{
-    display: none;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
     cursor: pointer;
-}
+} 
 .menu_bar ul{
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +139,7 @@ background: rgba(255, 255, 255, 0.30);
 width: 676px;
 margin:0 auto;
 }
+
 
 .banner_text{
     text-align: center;
@@ -202,7 +209,15 @@ background: #FF5400;
 text-align: center;
 line-height: 52px;
 margin-top: 24px;
+transition: all linear .3s;
 }
+
+.popular_button:hover{
+    color: #000;
+    background-color: #000;
+   
+}
+
 .popular_button a{
     color: #FFF;
     text-decoration: none;
@@ -211,6 +226,7 @@ text-align: center;
 font-family: Mulish;
 font-size: 20px;
 font-weight: 800;
+
 }
 
 
@@ -254,46 +270,46 @@ left: 4px;
 }
 .Maldives {
 	position: absolute;
-	top: 1630px;
-	left: 240px;
-	color: #FFF;
+	top: 1690px;
+	left: 285px;
+	color: #fff;
 }
 .Indonesia {
 	position: absolute;
-	top: 1630px;
-	left: 830px;
-	color: #FFF;
+	top: 1690px;
+	left: 870px;
+	color: #fff;
 }
 .Srilanka {
 	position: absolute;
-	top: 1950px;
-	left: 150px;
-	color: #FFF;
+	top: 1996px;
+	left: 190px;
+	color: #fff;
 }
 .NorthAmerica {
 	position: absolute;
-	top: 1950px;
-	left: 560px;
-	color: #FFF;
+	top: 1996px;
+	left: 590px;
+	color: #fff;
 }
-.Kashmir{
-    position: absolute;
-    top: 1950px;
-    left:990px;
-    color: #FFF;
+.Kashmir {
+	position: absolute;
+	top: 1996px;
+	left: 1028px;
+	color: #fff;
 }
 .Bangladesh {
 	position: absolute;
-	top: 2260px;
-	left: 170px;
-	color: #FFF;
+	top: 2305px;
+	left: 210px;
+	color: #fff;
 }
 
 .Bandarban {
 	position: absolute;
-	top: 2260px;
-	left: 770px;
-	color: #FFF;
+	top: 2305px;
+	left: 813px;
+	color: #fff;
 }
 
 /*================================choose us part ===================================*/
@@ -322,11 +338,11 @@ left: 4px;
 
 .card-1{
     width: 573px;
-/* height: 284px; */
+height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    padding: 32px;
+    
    
     
 }
@@ -346,6 +362,32 @@ text-align: start;
 border: 1px solid rgba(41, 206, 246, 0.20);
 background: rgba(41, 206, 246, 0.05);
 }
+.card-2 img{
+    flex-shrink: 0; 
+    }
+    .card-2 h2{
+        text-align: start;
+    }
+    .card-2 p{
+        text-align: start;
+    }
+    .card-3 img{
+        text-align: start;
+    
+        }
+        .card-3 h2{
+            text-align: start;
+        }
+        .card-3 p{
+            text-align: start;
+        }
+
+        .item-1{
+            position: relative;
+            left: 15px;
+            padding: 20px;
+
+        }
 .row-2{
     display: flex;
   
@@ -381,6 +423,8 @@ background: rgba(233, 68, 68, 0.05);
     border-radius: 16px;
     border: 1px solid #FF5400;
 padding: 40px;
+
+
 }
 .form input[type=text],
 .form input[type=email]
@@ -403,18 +447,29 @@ width:393px;
 
    
 }
-.button-input a{
+.button-input{
+font-family: Mulish;
+font-size: 20px;
+font-weight: 700;
     width: 393px;
     height: 52px;
-   text-decoration: none;
    display: inline-block;
    border-radius: 8px;
 background: #FF5400;
 text-align: center;
 line-height: 52px;
+transition: all linear.3s;
+}
+.button-input:hover{
+    color: #000;
+    background-color: #000;
+   
+}
+.button-input a{
+    text-decoration: none;
+    color: #fff;
 }
 .image_property{
-    /* position: relative; */
     height: 422px;
 }
 .item-card{
@@ -460,7 +515,6 @@ font-weight: 800;
 footer{
     background: rgba(19, 19, 24, 0.05);
     height: 502px;
-    /* border: 1px solid red; */
 }
 .logo_image{
     display: flex;
@@ -508,7 +562,34 @@ footer{
 
 /*=======================responsive css ==========================*/
 
-@media  (max-width:768px) {
+@media  (max-width:600px) {
+    .nav_logo{
+        display: flex;
+        position: relative;
+        top: -140px;
+
+    }
+    .nav-1{
+        margin-bottom: 200px;
+        position: relative;
+        top: 40px;
+    }
+    .chuadanga{
+        width: 70px;
+    }
+    .list{
+        position: relative;
+        right: 20px;
+       
+    }
+    .drop_2{
+        display: none;
+    }
+    .drop{
+        display: flex;
+        
+    }
+   
     .banner_text h1 {
         font-size: 22px;
        
@@ -551,6 +632,8 @@ footer{
         }
         .card-1 {
             width: 100%;
+            height: 200px;
+
         }
         .card-2 {
             width: 100%;
@@ -568,6 +651,8 @@ footer{
         }
         .item-card {
             width: 100%;
+            /* background-image: url('./Images/Rectangle\ 8\ \(1\).png'); */
+
            
         }
        
@@ -603,11 +688,98 @@ footer{
             flex-wrap: wrap;
            
         }
-    .menu_barr {
-    
-     
-        display: block;
+
+    .pic_1{
+        width: 100%;
     }
+   .pic_2{
+    width: 100%;
+   }
+   .destination_11{
+    width: 100%;
+   }
+.im_5{
+    width: 100%;
+}
+#imm_1 {
+	height: 186px;
+}
+#imm_2{
+    height: 186px;
+}
+#pic_6{
+    height: 186px;
+}
+#pic_7{
+    height: 186px;
+}
+#pic_8{
+    height: 186px;
+}
+.card-1 {
+	padding: 20px;
+	height: 274px;
+}
+#item_6{
+position: relative;
+top: -5px;
+}
+.form-part{
+width: 275px;
+}
+#hori{
+    display: none;
+}
+.Maldives {
+	top: 2460px;
+	left: 140px;
+    color: #fff;
+	
+}
+.Indonesia {
 
+	top: 2670px;
+	left: 140px;
+	color: #fff;
+}
+.Srilanka {
 
+	top: 2880px;
+	left: 150px;
+	color: #fff;
+}
+.NorthAmerica {
+
+	top: 3080px;
+	left: 120px;
+	color: #fff;
+}
+.Kashmir {
+
+	top: 3290px;
+	left: 155px;
+	color: #fff;
+}
+.Bangladesh {
+	position: absolute;
+	top: 3490px;
+	left: 133px;
+	color: #fff;
+}
+.Bandarban {
+
+	top: 3700px;
+	left: 128px;
+	color: #fff;
+}
+.button-input {
+	width: 282px;
+}
+.item-card-1 {
+	width: 238px;
+	height: 79px;
+	margin-top: 299px;
+	margin-left: 118px;
+	padding: 10px 0;
+}
     }
